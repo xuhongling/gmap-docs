@@ -7,15 +7,27 @@
 
 ### 参数：
 
-- `ol/map` 地图对象
+| 属性           | 类型           | 说明                                   |
+| -------------- | ------------- | -------------------------------------- |
+| Map            | `ol/Map`      | `ol/Map` 的地图对象                     |
+| measureOptions | `object`      | 测量参数配置，可选填，见`MeasureOptions` |
 
-### 返回值:
-- Number
+**MeasureOptions**
+
+| 属性           | 类型           | 默认值 | 可选值   | 说明                  |
+| -------------- | ----------    | ------ | ------- | --------------------- |
+| showSegments   | `boolean`     | `true` | -       | 显示绘制线段的长度      |
+| clearPrevious  | `boolean`     | `true` | -       | 清除先前的测量数据      |
+
 
 ### 示例
 
 ```js
 import { measureLength } from 'gmap-ol';
 
-measureLength(olMap);
+const measureOption = {
+  showSegments: true,
+  clearPrevious: false,
+};
+measureLength(olMap, measureOption);
 ```

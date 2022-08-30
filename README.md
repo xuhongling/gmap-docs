@@ -1,4 +1,4 @@
-# G-Map 中文文档
+# G-Map 文档
 
 > G-Map：基于OpenLayers的二维地图封装的函数方法
 
