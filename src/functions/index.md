@@ -2,7 +2,14 @@
 
 ## `getLayerByName`
 
-通过layerName获取地图对应的图层。
+通过`layerName`获取地图对应的图层。
+
+::: tip 提示
+
+- 这里通过`layerName`获取图层进行的操作，大都是指在**数据加载**方法向地图上面添加的`VectorLayer`
+- `VectorLayer` 详情请见附录中的[VectorLayer API](/src/appendix/VectorLayer)，或者OpenLayers官方API。
+
+:::
 
 ### 参数：
 

@@ -15,8 +15,8 @@
     "chalk": "^4.1.0",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
-    "vite": "^2.9.12",
-    "vitepress": "^1.0.0-alpha.9",
+    "vite": "^4.2.1",
+    "vitepress": "^1.0.0-alpha.65",
     "vue": "^3.2.37",
     "yorkie": "^2.0.0"
   }

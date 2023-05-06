@@ -20,12 +20,12 @@
 
 | 属性       | 类型          | 默认值        | 可选值        | 说明                                         |
 | --------- | ------------- | ------------- | ------------ | -------------------------------------------- |
-| imgSize   | `array`       | -             | -            | 导出图片的宽高大小                     |
-| type      | `string`      | `image/png`   | `image/jpeg` | 导出图片的数据格式                            |
-| quality   | `number`      | 0.8           | -            | 导出图片的质量                                |
+| imgSize   | `array`       | -             | -            | 导出图片的宽高大小                             |
+| type      | `string`      | `image/png`   | `image/jpeg` | 导出图片格式的编解码                           |
+| quality   | `number`      | 0.8           | -            | 导出图片的质量，最大是1                        |
 | title     | `object`      | -             | -            | 标题信息，见`TitleObject`                     |
 | subtitle  | `object`      | -             | -            | 副标题信息，见`TitleObject`                   |
-| legend    | `string`      | -             | -            | 需要合并在右下角的图例图片                     |
+| legend    | `string`      | -             | -            | 需要在地图右下角拼合的一个图例图片              |
 | down      | `boolean`     | `true`        | -            | 是否下载图片(有时可能只需返回的base64图片数据)  |
 
 **TitleObject**

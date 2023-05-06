@@ -8,7 +8,7 @@ hero:
   name: G-Map
   text: 基于OpenLayers的二维地图工具方法
   tagline: 简单、轻量且无依赖。满足在工作中地图功能的实现。
-  image: /logo.png
+  image: /logo-home.png
   actions:
     - theme: brand
       text: 快速开始 →

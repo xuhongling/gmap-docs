@@ -18,14 +18,14 @@
 
 **PolygonOptions**
 
-| 属性            | 类型          | 默认值 | 可选值  | 说明               |
-| -------------- | ------------- | ------ | ------ | ------------------ |
-| layerName      | `string`      | -      | 必填   | 图层名字            |
-| zIndex         | `string`      | 3      | -      | 图层上下层的叠加顺序 |
-| visible        | `boolean`     | `true` | -      | 是否显示            |
-| textFieldName  | `string`      | -      | -      | 线名别名字段         |
+| 属性            | 类型          | 默认值 | 可选值  | 说明                  |
+| -------------- | ------------- | ------ | ------ | --------------------- |
+| layerName      | `string`      | -      | 必填   | 图层名字               |
+| zIndex         | `string`      | 3      | -      | 图层上下层的叠加顺序    |
+| visible        | `boolean`     | `true` | -      | 是否显示               |
+| textFieldName  | `string`      | -      | -      | 线名别名字段            |
 | hoverStyle     | `boolean`     | `true` | -      | 是否为hover修改图层样式 |
-| styles         | `StyleObject` | -      | -      | Feature 样式        |
+| styles         | `StyleObject` | -      | -      | Feature 样式           |
 
 
 **PolygonData 示例**
@@ -62,7 +62,7 @@
 import { addPolygonLayer } from 'gmap-ol';
 
 // Polygon 的 GeoJSON 数据
-const polygonData = {};
+const polygonData = {...};
 
 const polygonOptions = {
   layerName: 'PolygonLayer',
@@ -100,12 +100,12 @@ addPolygonLayer(olMap, polygonData, polygonOptions);
 
 **Options**
 
-| 属性            | 类型          | 默认值 | 可选值  | 说明                                     |
-| -------------- | ------------- | ------ | ------ | ---------------------------------------- |
-| layerName      | `string`      | -      | 必填   | 图层名字                                  |
-| zIndex         | `string`      | 3      | -      | 图层上下层的叠加顺序                       |
-| visible        | `boolean`     | `true` | -      | 是否显示                                  |
-| renderColor    | `Array`       | -      | -      | 雨量面数据渲染的区间颜色集合，见RenderColor |
+| 属性            | 类型          | 默认值 | 可选值  | 说明                                       |
+| -------------- | ------------- | ------ | ------ | ------------------------------------------ |
+| layerName      | `string`      | -      | 必填   | 图层名字                                    |
+| zIndex         | `string`      | 3      | -      | 图层上下层的叠加顺序                         |
+| visible        | `boolean`     | `true` | -      | 是否显示                                    |
+| renderColor    | `Array`       | -      | -      | 雨量面数据渲染的区间颜色集合<br>见RenderColor |
 
 **RenderColor**
 
@@ -135,8 +135,8 @@ addPolygonLayer(olMap, polygonData, polygonOptions);
       "id": "fid.0",
       "properties": {
         "area": 5407.41,
-        "hvalue": 10,
-        "lvalue": 10
+        "highValue": 10,
+        "lowValue": 10
       }
     },
   ],
@@ -151,7 +151,7 @@ addPolygonLayer(olMap, polygonData, polygonOptions);
 import { addRainPolygonLayer } from 'gmap-ol';
 
 // 生成雨量面 的 GeoJSON 数据
-const RainPolygonGeoJSON = {};
+const RainPolygonGeoJSON = {...};
 
 const rainPolygonOptions = {
   layerName: 'RainPolygon',

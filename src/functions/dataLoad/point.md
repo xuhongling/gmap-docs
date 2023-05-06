@@ -55,17 +55,27 @@
 import { addPointLayer } from 'gmap-ol';
 
 // Point 的 GeoJSON 数据
-const pointData = {};
+const pointData = {...};
 
 // Point 的 Options
 const pointOptions = {
   layerName: 'PointLayer',
-  zIndex: 10,
   icon: './RR.png',
-  textFieldName: 'name',
-  styles: {
+  zIndex: 10,  // 非必填
+  textFieldName: 'name',  // 非必填
+  styles: {  // 非必填
     image: {
       scale: 0.75,
+    },
+    text: {
+      fill: {
+        color: 'rgba(255, 0, 0, 1)',
+      },
+      stroke: {
+        width: 2,
+        color: 'rgba(255, 255, 255, 0.8)',
+      },
+      font: 'italic small-caps bold 11px sans-serif',
     },
   },
 };
@@ -156,14 +166,24 @@ const pointData = [];
 // Point 的 Options
 const pointOptions = {
   layerName: 'PointLayer',
-  zIndex: 10,
   icon: './RR.png',
-  textColor: 'rgba(155, 0, 250, 1)',
-  textFieldName: 'STNM',
-  zoomFieldName: 'STBPRPLEVEL',
-  styles: {
+  zIndex: 10,  // 非必填
+  textColor: 'rgba(155, 0, 250, 1)',  // 非必填
+  textFieldName: 'STNM',  // 非必填
+  zoomFieldName: 'STBPRPLEVEL',  // 非必填
+  styles: {  // 非必填
     image: {
       scale: 0.75,
+    },
+    text: {
+      fill: {
+        color: 'rgba(255, 0, 0, 1)',
+      },
+      stroke: {
+        width: 2,
+        color: 'rgba(255, 255, 255, 0.8)',
+      },
+      font: 'italic small-caps bold 11px sans-serif',
     },
   },
 };
@@ -172,3 +192,7 @@ const pointOptions = {
 addPointDataLayer(olMap, pointData, pointOptions);
 
 ```
+
+**效果预览图：**
+
+![](/images/Point.jpg)

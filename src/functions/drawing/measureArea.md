@@ -7,10 +7,11 @@
 
 ### 参数：
 
-| 属性           | 类型           | 说明                                   |
-| -------------- | ------------- | -------------------------------------- |
-| Map            | `ol/Map`      | `ol/Map` 的地图对象                     |
-| measureOptions | `object`      | 测量参数配置，可选填，见`MeasureOptions` |
+| 属性           | 类型           | 可选值 | 说明                                   |
+| -------------- | ------------- | ------ | -------------------------------------- |
+| Map            | `ol/Map`      | 必填   | `ol/Map` 的地图对象                     |
+| measureOptions | `object`      | -      | 测量参数配置，可选填，见`MeasureOptions` |
+| callback       | `function`    | -      | 回调函数，返回测量的数据结果             |
 
 **MeasureOptions**
 
@@ -29,5 +30,11 @@ const measureOption = {
   showSegments: true,
   clearPrevious: false,
 };
-measureArea(olMap, measureOption);
+measureArea(olMap, measureOption, (data)=>{
+  console.log(data); // 测量结果数据
+});
 ```
+
+**效果预览图：**
+
+![](/images/measureArea.gif)

@@ -2,7 +2,7 @@
 
 ## 简介
 
-[gmap-ol](https://github.com/xuhongling/gmap-ol) 是一个基于[OpenLayers](https://openlayers.org)的二维地图工具函数方法，目标是轻量级和无依赖，为前端在任何的项目开发中提供简便快捷的地图操作方法。该工具包括地图的数据加载、 数据转换、 地图效果、 地图控件等功能。
+[gmap-ol](https://www.npmjs.com/package/gmap-ol) 是一个基于[OpenLayers](https://openlayers.org)的二维地图工具函数方法，目标是轻量级和无依赖，为前端在任何的项目开发中提供简便快捷的地图操作方法。该工具包括地图的数据加载、 数据转换、 地图效果、 地图控件等功能。
 
 ## 文档
 

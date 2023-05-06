@@ -15,5 +15,5 @@
 ```js
 import { setLayerVisible } from 'gmap-ol';
 
-setLayerVisible(map, layerName, status) ;
+setLayerVisible(map, layerName, status);
 ```

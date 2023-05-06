@@ -55,14 +55,14 @@
 import { addLineStringLayer } from 'gmap-ol';
 
 // LineString 的 GeoJSON 数据
-const lineStringData = {};
+const lineStringData = {...};
 
 // lineString 的 Options
 const lineStringOptions = {
   layerName: 'LineStringLayer',
-  zIndex: 10,
-  textFieldName: 'name',
-  styles: {
+  zIndex: 10,  // 非必填
+  textFieldName: 'name',  // 非必填
+  styles: {  // 非必填
     stroke: {
       width: 2,
       color: 'rgba(10, 10, 250, 1)',
@@ -74,3 +74,7 @@ const lineStringOptions = {
 addLineStringLayer(olMap, lineStringData, lineStringOptions);
 
 ```
+
+**效果预览图：**
+
+![](/images/LineString.jpg)

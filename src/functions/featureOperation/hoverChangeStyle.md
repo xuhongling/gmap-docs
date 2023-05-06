@@ -22,17 +22,17 @@
 **示例：**
 
 ```js
-  import { hoverChangeStyle } from 'gmap-ol';
+import { hoverChangeStyle } from 'gmap-ol';
 
 hoverChangeStyle(olMap, 'PolygonLayer', {
-    fill: {
-      color: 'rgba(0, 100, 240, 0.5)',
-    },
-    stroke: {
-      width: 8,
-      color: 'rgba(0, 140, 255, 0.2)',
-    },
-  });
+  fill: {
+    color: 'rgba(0, 100, 240, 0.5)',
+  },
+  stroke: {
+    width: 8,
+    color: 'rgba(0, 140, 255, 0.2)',
+  },
+});
 ```
 
 **效果预览图：**

@@ -41,6 +41,7 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/src/guide/', activeMatch: '/guide/' },
       { text: 'Functions', link: '/src/functions/', activeMatch: '/functions/' },
+      { text: '附录', link: '/src/appendix/', activeMatch: '/appendix/' },
       {
         text: '相关链接',
         items: [
@@ -66,12 +67,12 @@ export default defineConfig({
               link: '/src/guide/'
             },
             {
-              text: 'GeoJSON简介',
-              link: '/src/guide/geojson'
-            },
-            {
               text: '初始化',
               link: '/src/guide/initialization'
+            },
+            {
+              text: 'GeoJSON简介',
+              link: '/src/guide/geojson'
             },
           ]
         },
@@ -95,6 +96,10 @@ export default defineConfig({
             {
               text: 'setLayerVisible',
               link: '/src/functions/layerOperation/setLayerVisible'
+            },
+            {
+              text: 'getOptionsStyle',
+              link: '/src/functions/layerOperation/getOptionsStyle'
             },
           ]
         },
@@ -134,6 +139,31 @@ export default defineConfig({
               text: 'pickFeaturesPopover',
               link: '/src/functions/featureOperation/pickFeaturesPopover'
             },
+            {
+              text: 'boxSelectionFeatures',
+              link: '/src/functions/featureOperation/boxSelectionFeatures'
+            },
+          ]
+        },
+        {
+          text: '测量绘制',
+          items: [
+            {
+              text: 'measureLength',
+              link: '/src/functions/drawing/measureLength'
+            },
+            {
+              text: 'measureArea',
+              link: '/src/functions/drawing/measureArea'
+            },
+            {
+              text: 'drawFeatures',
+              link: '/src/functions/drawing/drawFeatures'
+            },
+            {
+              text: 'freehandDrawing',
+              link: '/src/functions/drawing/freehandDrawing'
+            },
           ]
         },
         {
@@ -157,16 +187,47 @@ export default defineConfig({
               link: '/src/functions/other/exportMapToImage'
             },
             {
-              text: 'measureLength',
-              link: '/src/functions/other/measureLength'
-            },
-            {
-              text: 'measureArea',
-              link: '/src/functions/other/measureArea'
+              text: 'zoomToFitExtent',
+              link: '/src/functions/other/zoomToFitExtent'
             },
           ]
         },
       ],
+      '/src/appendix/': [
+        {
+          text: 'OpenLayers API',
+          items: [
+            {
+              text: '简介',
+              link: '/src/appendix/'
+            },
+            {
+              text: 'Map',
+              link: '/src/appendix/Map'
+            },
+            {
+              text: 'View',
+              link: '/src/appendix/View'
+            },
+            {
+              text: 'Layer',
+              link: '/src/appendix/Layer'
+            },
+            {
+              text: 'VectorLayer',
+              link: '/src/appendix/VectorLayer'
+            },
+            {
+              text: 'Overlay',
+              link: '/src/appendix/Overlay'
+            },
+            {
+              text: 'Style',
+              link: '/src/appendix/Style'
+            },
+          ]
+        },
+      ]
     }
   },
 });

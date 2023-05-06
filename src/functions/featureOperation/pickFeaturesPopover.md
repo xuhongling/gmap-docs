@@ -21,10 +21,10 @@
 
 **PickOptions**
 
-| 属性           | 类型           | 默认值 | 可选值   | 说明                            |
-| -------------- | ----------    | ------ | ------- | ------------------------------- |
-| data           | `array`       | -      | 必填    | 获取范围内的重叠要素数据           |
-| textFieldName  | `string`      | -      | -       | 需要在弹窗内展示数据的别名字段     |
+| 属性          | 类型      | 默认值 | 可选值 | 说明                            |
+| ------------- | -------- | ------ | ----- | ------------------------------- |
+| data          | `array`  | -      | 必填  | 获取范围内的重叠要素数据           |
+| textFieldName | `string` | -      | -     | 需要在弹窗内展示数据的别名字段<br/>多种字段名可以用逗号分开 |
 
 **示例：**
 
@@ -42,7 +42,7 @@ olMap.on('singleclick', async (event) => {
   // 配置
   const pickOptions = {
     data: pickFeaturesData,
-    textFieldName: 'STNM',
+    textFieldName: 'STNM,name', // 如有多种字段名可以用逗号分开
   };
   pickFeaturesPopover(olMap, pickOptions, pickCallbackFn);
 });

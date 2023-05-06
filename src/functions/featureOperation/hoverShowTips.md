@@ -23,7 +23,7 @@
 ```js
 import { hoverShowTips } from 'gmap-ol';
 
-hoverShowTips(olMap, 'PolygonLayer', { tipsAliasName: 'name' });
+hoverShowTips(olMap, 'PolygonLayer', { textFieldName: 'name' });
 ```
 
 **效果预览图：**
