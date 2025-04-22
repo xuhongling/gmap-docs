@@ -10,7 +10,7 @@
 | -------------- | ------------- | ------ | ----------------------------------------------- |
 | Map            | `ol/Map`      | 必填   | `ol/Map` 的地图对象                               |
 | Options        | `DrawOptions` | 必填   | 自由绘制图形的配置，见`DrawOptions`                |
-| callback       | `function`    | -      | 回调函数，返回绘制图形对应的<br/>`Features`要素数据 |
+| callback       | `function`    | -      | 回调函数，返回绘制图形对应的<br/>`VectorSource`数据 |
 
 **DrawOptions**
 
@@ -52,7 +52,7 @@ const drawOptions = {
 
 // 获取绘制图形要素数据的回调函数，可选
 function drawCallbackFn(data) {
-  console.log(data, '绘制图形对应的`Features`要素数据');
+  console.log(data, '绘制图形对应的`VectorSource`数据');
 }
 // 绘制图形
 freehandDrawing(olMap, drawOptions, drawCallbackFn);

@@ -21,6 +21,7 @@
 | 属性           | 类型           | 默认值 | 可选值  | 说明                 |
 | -------------- | ----------    | ------ | ------ | -------------------- |
 | layerName      | `string`      | -      | 必填   | 图层名字              |
+| className      | `string`      | -      | -      | 图层样式Class          |
 | zIndex         | `string`      | 5      | -      | 图层上下层的叠加顺序   |
 | visible        | `boolean`     | `true` | -      | 是否显示              |
 | icon           | `string`      | -      | -      | 站点图标              |
@@ -119,13 +120,17 @@ addPointLayer(olMap, pointData, pointOptions);
 | 属性           | 类型           | 默认值 | 可选值  | 说明                   |
 | -------------- | ----------    | ------ | ------ | ---------------------- |
 | layerName      | `string`      | -      | 必填   | 图层名字                |
+| className      | `string`      | -      | -      | 图层样式Class           |
 | zIndex         | `string`      | 5      | -      | 图层上下层的叠加顺序     |
 | visible        | `boolean`     | `true` | -      | 是否显示                |
 | icon           | `string`      | -      | -      | 站点图标                |
 | textColor      | `string`      | `#000` | -      | 站点文字颜色            |
 | textFieldName  | `string`      | -      | -      | 站点别名字段            |
 | zoomFieldName  | `string`      | -      | -      | 站点分层展示的别名字段   |
+| zoomNumber     | `number`      | 6      | -      | 站点分层相加地图层级的初始值 |
 | hoverStyle     | `boolean`     | `true` | -      | 是否为hover修改图层样式 |
+| cluster        | `boolean`     | `false`| -      | 是否开始聚合图层样式功能 |
+| distance       | `number`      | 30     | -      | 设置的最小聚合显示距离   |
 | styles         | `StyleObject` | -      | -      | Feature 样式           |
 
 **PointData 示例**

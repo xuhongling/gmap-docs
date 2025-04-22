@@ -6,7 +6,7 @@ titleTemplate: For OpenLayers
 
 hero:
   name: G-Map
-  text: 基于OpenLayers的二维地图工具方法
+  text: 基于OpenLayers的二维地图工具函数
   tagline: 简单、轻量且无依赖。满足在工作中地图功能的实现。
   image: /logo-home.png
   actions:
@@ -14,8 +14,8 @@ hero:
       text: 快速开始 →
       link: /src/guide/
     - theme: alt
-      text: 在 GitHub 上查看
-      link: https://github.com/xuhongling/gmap-docs
+      text: 在 NPM 上查看
+      link: https://www.npmjs.com/package/gmap-ol
 
 features:
   - title: 💡 简单至上

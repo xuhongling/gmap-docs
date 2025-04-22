@@ -19,6 +19,7 @@
 | 属性            | 类型          | 默认值 | 可选值  | 说明                  |
 | -------------- | ------------- | ------ | ------ | --------------------- |
 | layerName      | `string`      | -      | 必填   | 图层名字               |
+| className      | `string`      | -      | -      | 图层样式Class          |
 | zIndex         | `string`      | 4      | -      | 图层上下层的叠加顺序    |
 | visible        | `boolean`     | `true` | -      | 是否显示               |
 | textFieldName  | `string`      | -      | -      | 线名别名字段           |

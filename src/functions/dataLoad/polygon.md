@@ -21,6 +21,7 @@
 | 属性            | 类型          | 默认值 | 可选值  | 说明                  |
 | -------------- | ------------- | ------ | ------ | --------------------- |
 | layerName      | `string`      | -      | 必填   | 图层名字               |
+| className      | `string`      | -      | -      | 图层样式Class          |
 | zIndex         | `string`      | 3      | -      | 图层上下层的叠加顺序    |
 | visible        | `boolean`     | `true` | -      | 是否显示               |
 | textFieldName  | `string`      | -      | -      | 线名别名字段            |
@@ -132,7 +133,7 @@ addPolygonLayer(olMap, polygonData, polygonOptions);
         ],
         "type": "MultiPolygon"
       },
-      "id": "fid.0",
+      "id": "fid0",
       "properties": {
         "area": 5407.41,
         "highValue": 10,
@@ -161,7 +162,7 @@ const rainPolygonOptions = {
     { minvalue: 10, color: 'rgba(50, 210, 50, 0.75)', maxvalue: 25 },
     { minvalue: 25, color: 'rgba(100, 210, 250, 0.75)', maxvalue: 50 },
     { minvalue: 50, color: 'rgba(0, 0, 250, 0.75)', maxvalue: 100 },
-    { minvalue: 100, color: 'r, gba(250, 0, 250, 0.75)', maxvalue: 250 },
+    { minvalue: 100, color: 'rgba(250, 0, 250, 0.75)', maxvalue: 250 },
     { minvalue: 250, color: 'rgba(160, 0, 50, 0.75)', maxvalue: 9999 },
   ],
 };

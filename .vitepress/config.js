@@ -118,6 +118,14 @@ export default defineConfig({
               text: 'Polygon',
               link: '/src/functions/dataLoad/polygon'
             },
+            {
+              text: 'WMS',
+              link: '/src/functions/dataLoad/WMS'
+            },
+            {
+              text: 'WFS',
+              link: '/src/functions/dataLoad/WFS'
+            },
           ]
         },
         {
@@ -142,6 +150,14 @@ export default defineConfig({
             {
               text: 'boxSelectionFeatures',
               link: '/src/functions/featureOperation/boxSelectionFeatures'
+            },
+            {
+              text: 'getWmsFeature',
+              link: '/src/functions/featureOperation/getWmsFeature'
+            },
+            {
+              text: 'updateWfsFilter',
+              link: '/src/functions/featureOperation/updateWfsFilter'
             },
           ]
         },
